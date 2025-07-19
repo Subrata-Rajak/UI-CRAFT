@@ -4,21 +4,21 @@ import 'package:flutter/material.dart';
 
 import 'shimmer_gradient_transform.dart';
 
-class ShimmerOverlay extends StatefulWidget {
+class UcShimmerOverlay extends StatefulWidget {
   final bool isLoading;
   final Widget child;
 
-  const ShimmerOverlay({
+  const UcShimmerOverlay({
     super.key,
     required this.isLoading,
     required this.child,
   });
 
   @override
-  State<ShimmerOverlay> createState() => _ShimmerOverlayState();
+  State<UcShimmerOverlay> createState() => _UcShimmerOverlayState();
 }
 
-class _ShimmerOverlayState extends State<ShimmerOverlay>
+class _UcShimmerOverlayState extends State<UcShimmerOverlay>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _animation;

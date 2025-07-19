@@ -10,7 +10,7 @@ class ShimmerDemo extends StatelessWidget {
       appBar: AppBar(title: const Text('Shimmer Overlay Example')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ShimmerOverlay(
+        child: UcShimmerOverlay(
           isLoading: true,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

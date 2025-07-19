@@ -19,15 +19,17 @@
 - Cross-platform compatibility (web, mobile, desktop)
 - Fully customizable styling options
 
-### Documentation
-
-- Comprehensive README with usage examples
-- Installation instructions
-- Versioning information
-- Custom widget request guidelines
-- Development setup instructions
-
 ### Dependencies
 
 - Flutter SDK ^3.8.1
 - Flutter Lints ^5.0.0 for code quality
+
+## 0.0.2 - 2025-07-19
+
+### Added
+
+- StepIndicator
+- Theme Switcher
+- Content, grid and list
+- Progress indicators
+- Rating bars

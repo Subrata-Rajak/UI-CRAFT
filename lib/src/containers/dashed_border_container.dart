@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class DashedBorderContainer extends StatelessWidget {
+class UcDashedBorderContainer extends StatelessWidget {
   final Widget child;
   final Color color;
   final double strokeWidth;
@@ -15,7 +15,7 @@ class DashedBorderContainer extends StatelessWidget {
   final double height;
   final Alignment alignment;
 
-  const DashedBorderContainer({
+  const UcDashedBorderContainer({
     super.key,
     required this.child,
     this.color = Colors.black,

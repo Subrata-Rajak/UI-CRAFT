@@ -13,7 +13,7 @@ class DashedBorderContainerDemo extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const DashedBorderContainer(
+            const UcDashedBorderContainer(
               width: 100,
               height: 40,
               color: Colors.red,
@@ -30,7 +30,7 @@ class DashedBorderContainerDemo extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const DashedBorderContainer(
+            const UcDashedBorderContainer(
               width: double.infinity,
               height: 40,
               alignment: Alignment.center,

@@ -1,16 +1,23 @@
+import 'package:example/home.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:ui_craft/ui_craft.dart';
 
 class DemoApp extends StatelessWidget {
   const DemoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'UI Draft Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-      home: const HomeScreen(),
+    return ThemeSwitcherWrapper(
+      useSystemTheme: false,
+      builder: (context, isDark) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData.light(),
+          darkTheme: ThemeData.dark(),
+          themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+          home: const HomeScreen(),
+        );
+      },
     );
   }
 }

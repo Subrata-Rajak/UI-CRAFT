@@ -45,6 +45,13 @@ This package follows semantic versioning (MAJOR.MINOR.PATCH):
   - Added DashedBorderContainer
   - Added ShimmerOverlay
 
+- **0.0.2** - 
+  - Added StepIndicator
+  - Added Theme Switcher
+  - Added Content, grid and list
+  - Added progress indicators
+  - Added rating bars
+
 ### Upgrading
 
 To upgrade to the latest version:
@@ -61,42 +68,6 @@ dependencies:
 ```
 
 Then run `flutter pub get` to install the package.
-
-## Usage
-
-Here's a quick example of how to use the DashedBorderContainer:
-
-```dart
-import 'package:ui_craft/ui_craft.dart';
-
-DashedBorderContainer(
-  child: Text('Hello World'),
-  color: Colors.blue,
-  strokeWidth: 2.0,
-  dashWidth: 8.0,
-  dashGap: 4.0,
-  borderRadius: BorderRadius.circular(12),
-  padding: const EdgeInsets.all(16),
-)
-```
-
-And here's how to use the ShimmerOverlay:
-
-```dart
-import 'package:ui_craft/ui_craft.dart';
-
-ShimmerOverlay(
-  loading: true,
-  child: Container(
-    height: 200,
-    width: 200,
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(12),
-    ),
-  ),
-)
-```
 
 ## Contributing
 
